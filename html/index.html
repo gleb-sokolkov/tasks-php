@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <link rel="stylesheet" href="/zeroing.css">
+  <link rel="stylesheet" href="/blocks.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="registration.js" defer></script>
+</head>
+
+<body>
+  <main class="_container registration">
+    <div class="registration__form">
+      <h1 class="registration__header">Регистрация пользователя</h1>
+      <form class="main-form" action="registration" method="post">
+        <div class="main-form__block main-form__block_divided">
+          <div class="main-form__input-group">
+            <label class="main-form__label" for="name">Имя:</label>
+            <input class="main-form__input" type="text" required id="name" name="name" placeholder="Введите имя">
+          </div>
+          <div class="main-form__input-group">
+            <label class="main-form__label" for="surname">Фамилия:</label>
+            <input class="main-form__input" type="text" required id="surname" name="surname"
+              placeholder="Введите фамилию">
+          </div>
+          <div class="main-form__input-group">
+            <label class="main-form__label" for="email">Почта:</label>
+            <input class="main-form__input" type="email" required id="email" name="email" placeholder="Введите почту">
+          </div>
+        </div>
+        <div class="main-form__block">
+          <p class="main-form__label">Курсы:</p>
+          <div class="main-form__input-group">
+            <div class="main-form__radio-group">
+              <input class="main-form__radio" type="radio" name="drupal" id="drupal7" checked>
+              <label class="main-form__label main-form__label_inlined" for="drupal7">Drupal 7</label>
+            </div>
+            <div class="main-form__radio-group">
+              <input class="main-form__radio" type="radio" name="drupal" id="drupal8">
+              <label class="main-form__label main-form__label_inlined" for="drupal8">Drupal 8</label>
+            </div>
+          </div>
+          <div class="main-form__input-group">
+            <label class="main-form__label" for="extra-info">Дополнительная информация:</label>
+            <textarea class="main-form__textarea" name="extra-info" id="extra-info" cols="45" rows="7"
+              placeholder="Оставьте текст"></textarea>
+          </div>
+        </div>
+        <div class="main-form__action-group">
+          <button type="submit">Отправить</button>
+          <button type="reset">Очистить</button>
+        </div>
+      </form>
+    </div>
+    <div class="registration__end">
+      <h1 class="registration__header">Завершение регистрации</h1>
+      <p class="registration__lead">Вы успешно зарегистрированы, спасибо!</p>
+      <p class="registration__lead">
+        <a href="./">Вернуться назад</a>
+        <span>чтобы повторно ввести данные</span>
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>

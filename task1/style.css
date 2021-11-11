@@ -1,0 +1,27 @@
+.registration {
+  --pt: 3rem;
+  --form-max-width: 550px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: monospace;
+  padding-top: var(--pt);
+}
+
+.registration__form {
+  flex: 1 1 auto;
+  max-width: var(--form-max-width);
+}
+
+
+.registration__header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.registration__end {
+}
+
+.registration__lead {
+  font-size: 1.25rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2</title>
+  <link rel="stylesheet" href="/zeroing.css">
+  <link rel="stylesheet" href="/blocks.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="spa-form.js" defer></script>
+</head>
+
+<body>
+  <main class="_container client-info">
+    <form action="POST" class="client-info__form main-form" data-type="step-form">
+      <div class="client-info__step-container">
+        <div class="client-info__step" data-type="step">
+          <h2 class="client-info__title">Введите Имя</h2>
+          <div class="main-form__input-group">
+            <input type="text" class="main-form__input" name="firstName" data-type="text" data-validate="true" placeholder="Имя">
+          </div>
+        </div>
+        <div class="client-info__step" data-type="step">
+          <h2 class="client-info__title">Введите Фамилию</h2>
+          <div class="main-form__input-group">
+            <input type="text" class="main-form__input" name="surName" data-type="text" data-validate="true" placeholder="Фамилия">
+          </div>
+        </div>
+        <div class="client-info__step" data-type="step">
+          <h2 class="client-info__title">Введите email</h2>
+          <div class="main-form__input-group">
+            <input type="email" class="main-form__input" name="email" data-type="email" data-validate="true" placeholder="Почта">
+          </div>
+        </div>
+        <div class="client-info__step" data-type="step">
+          <div class="text-center">
+            <h2 class="client-info__title">Спасибо!</h2>
+            <a href="/task2">Вернуться назад</a>
+            <span>чтобы повторить отправку формы</span>
+          </div>
+        </div>
+      </div>
+      <div class="client-info__controller">
+        <button class="btn" type="button" data-type="prev">Назад</button>
+        <button class="btn" type="button" data-type="next">Далее</button>
+        <button class="btn" type="button" data-type="end">Конец</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

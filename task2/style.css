@@ -1,0 +1,48 @@
+.client-info {
+  --pt: 3rem;
+  --title-mb: 1rem;
+  --header-color: hsl(0, 0%, 75%);
+  --title-color: black;
+  padding-top: var(--pt);
+}
+
+.client-info__form {
+
+}
+
+.client-info__step-container {
+
+}
+
+.client-info__step {
+  display: none;
+  opacity: 0;
+  height: 10rem;
+}
+
+.client-info__step_current {
+  display: block;
+  opacity: 1;
+}
+
+.client-info__header {
+  color: var(--header-color);
+  font-family: monospace;
+}
+
+.client-info__title {
+  color: var(--title-color);
+  font-weight: normal;
+}
+
+.client-info__title:not(:last-child) {
+  margin-bottom: var(--title-mb);
+}
+
+.client-info__title.client-info__title_centered {
+  text-align: center;    
+}
+
+.client-info__controller {
+
+}

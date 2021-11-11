@@ -13,3 +13,84 @@
 .h1 {
   font-size: 2rem;
 }
+
+
+
+/* ----------- */
+/*    FORMS    */
+/* ----------- */
+
+.main-form {
+  --border: 1px solid black;
+  --p: 0.75rem;
+  --group-m: 1.5rem;
+  --block-m: 0.5rem;
+  --invalid-input-color: hsl(0, 87%, 65%);
+  display: block;
+  border: var(--border);
+  padding: var(--p);
+  font-family: sans-serif;
+}
+
+.main-form__block.main-form__block_divided:not(:only-child) {
+  border-bottom: var(--border);
+  margin-bottom: var(--block-m);
+}
+
+.main-form__input {
+  font-size: 0.8rem;
+  border: 1px solid black;
+}
+
+.main-form__input_invalid {
+  border-color: var(--invalid-input-color);
+}
+
+.main-form__input_invalid::placeholder {
+  color: var(--invalid-input-color);
+}
+
+.main-form__textarea {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.main-form__input-group:not(:only-child) {
+  margin-bottom: var(--group-m);
+}
+
+.main-form__label {
+  display: block;
+}
+
+.main-form__label.main-form__label_inlined {
+  display: inline-block;
+}
+
+.main-form__radio-group {
+  
+}
+
+.main-form__action-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* ----------- */
+/*   BUTTONS   */
+/* ----------- */
+
+.btn {
+  display: inline-block;
+  transition: 
+    transform 0.2s;
+  transform: none;
+}
+
+.btn:active {
+  transform: translateY(0.5rem);
+}
+
+.btn_disabled {
+  display: none;
+}

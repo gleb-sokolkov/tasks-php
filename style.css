@@ -1,5 +1,6 @@
 .nav {
   --item-bg: hsl(202, 100%, 92%);
+  --nav-item-color: hsl(202, 25%, 30%);
   --item-size: 7rem;
   --item-font-size: 2rem;
   --item-shadow: 0.5rem 0.5rem hsl(225, 30%, 76%), 0.75rem 0.75rem 1rem rgba(57, 90, 112, 0.24);
@@ -37,6 +38,10 @@
   border-radius: 1rem;
   box-shadow: var(--item-shadow);
   transition: 0.15s;
+}
+
+a.nav__item {
+  color: var(--nav-item-color);
 }
 
 .nav__item:hover {

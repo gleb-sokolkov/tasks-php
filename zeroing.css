@@ -43,6 +43,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   font-family: monospace;
+  font-size: 1rem;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/

@@ -72,26 +72,30 @@ INSERT INTO History ( trainee_id, course_id, start, end, status ) VALUES
 (1, 2,  '2006-10-21', '2007-03-02', 1);
 
 # Запрос 1
-SELECT 
+SELECT
     Trainee.name AS `trainee name`, 
-	Trainee.email AS `trainee email`, 
+	  Trainee.email AS `trainee email`, 
     Course.name AS `course name`, 
     History.end AS `history end` from History
     INNER JOIN Trainee ON History.trainee_id = Trainee.id INNER JOIN Course ON History.course_id = Course.course_id
     WHERE
-        (History.end BETWEEN CURRENT_DATE - INTERVAL 2 MONTH AND CURRENT_DATE - INTERVAL 1 MONTH)
+      YEAR(History.end) = YEAR(CURRENT_DATE())
     AND
-    	Course.name LIKE 'PHP'
+		  MONTH(History.end) = MONTH(CURRENT_DATE() - INTERVAL 1 MONTH)    	
+    AND
+    	Course.name = 'PHP'
     AND
     	History.status = 1;
 
 # Запрос 2
 SELECT
     Course.name AS `course name`, 
-    COUNT(Course.course_id) AS `quantity` from History
+    COUNT(*) AS `quantity` from History
     INNER JOIN Course ON History.course_id = Course.course_id
     WHERE
-    	(History.status = 1)
+    	YEAR(History.start) = YEAR(CURRENT_DATE())
+   	AND
+    	MONTH(History.start) = MONTH(CURRENT_DATE())
     AND
-    	(History.start BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL 30 DAY)
-    GROUP BY Course.course_id;
+    	(History.status = 1)
+    GROUP BY Course.name;

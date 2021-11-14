@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4</title>
+  <link rel="stylesheet" href="/zeroing.css">
+  <link rel="stylesheet" href="/blocks.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js" type="module" defer></script>
+</head>
+<body>
+  <main class="search">
+    <div class="search__details">
+      <h1 class="search__header">Найти строку в тексте</h1>
+      <div class="search__filter">
+        <div class="search__group">
+          <label class="search__label" for="search">Ключевая строка:</label>
+          <input type="text" class="search__input" id="search" name="search" 
+            placeholder="Lorem 'ipsum dolor' sit" data-type="string">
+        </div>
+        <p class="search__filter-tip">
+        Для указания несколько слов, введите каждое через пробел. 
+        Для указания фразы или словосочетания, введите его через двойные кавычки.
+      </p>
+      </div>
+      <div class="search__actions">
+        <button class="search__start btn" data-type="search">Поиск</button>
+      </div>
+    </div>
+    <div class="search__body">
+      <div class="search__text" data-type="body">
+      </div>
+    </div>
+  </main>
+</body>
+</html>

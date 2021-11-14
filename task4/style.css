@@ -1,0 +1,70 @@
+.search {
+  --max-w: 800px;
+  --p: 2rem 1rem 0 1rem;
+  --details-p: 0.5rem 0;
+  --header-m: 0 0 1rem 0;
+  --filter-m: 0 0 1rem 0;
+  --group-m: 0 0 0.5rem 0;
+  --body-p: 0.5rem 0;
+  --col: black;
+  --muted: hsl(0, 0%, 65%);
+  --light: hsl(0, 0%, 97%);
+  --fs-lg: 2.5rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.8rem;
+  --border-light: 1px solid hsl(0, 0%, 90%);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--p);
+  font-size: var(--fs-md);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--col);
+}
+
+.search__details {
+  padding: var(--details-p);
+  border-bottom: 1px solid black;
+}
+
+.search__header {
+  font-size: var(--fs-lg);
+  margin: var(--header-m);
+  font-family: monospace;
+}
+
+.search__filter {
+  width: min-content;
+  margin: var(--filter-m);
+}
+
+.search__group {
+  white-space: nowrap;
+  margin: var(--group-m);
+  word-spacing: 1em;
+}
+
+.search__label {
+  word-spacing: 0;
+}
+
+.search__input {
+}
+
+.search__filter-tip {
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+
+.search__actions {
+}
+
+.search__start {
+}
+
+.search__body {
+  padding: var(--body-p);
+}
+
+.search__text {
+  font-family: 'Georgia', serif;
+}

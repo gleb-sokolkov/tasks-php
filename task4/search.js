@@ -5,13 +5,13 @@ const text = `
   laborum consectetur! Repellat impedit quos excepturi? Molestiae totam nihil enim, 
   sapiente asperiores adipisci cupiditate sit aliquid iure vitae voluptate beatae tenetur 
   vero minima ratione ullam magni pariatur numquam corrupti consequatur libero eaque.
-`;
+`.replace(/\n/g, '');
 
 const string = document.querySelector('[data-type="string"]');
 const searchBtn = document.querySelector('[data-type="search"]');
 const body = document.querySelector('[data-type="body"]');
 
-body.innerText = text.replace(/\n/g, '');
+body.innerText = text;
 
 string.oninput = request;
 searchBtn.onclick = request; 
